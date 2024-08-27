@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard - Home Page</title>
+    <title>Dashboard - Setting</title>
 
     <!-- Global bootstrap CDN V5.3.2 for ltr -->
     <link
@@ -260,7 +260,6 @@
           </button>
         </nav>
         <!-- Aside responsive -->
-
         <aside
           class="aside d-block aside_mob offcanvas offcanvas-start"
           data-bs-scroll="true"
@@ -388,194 +387,136 @@
             </ul>
           </div>
         </aside>
-        <!-- cards container -->
-        <div class="cards_container">
-          <div class="row px-3">
-            <div class="col">
-              <div class="card">
-                <div class="icon_text_container">
-                  <img
-                    src="./assets/imgs/home/blue_text_icon.svg"
-                    alt="blue_text_icon.svg"
-                  />
-                  <div class="card_data_container">
-                    <p class="card_data">Total Massage</p>
-                    <div class="card_value">1000</div>
-                  </div>
-                </div>
-                <div class="percent_days_container">
-                  <img
-                    src="./assets/imgs/home/green_up_arrow.svg"
-                    alt="green_up_arrow.svg"
-                  />
-                  <span>0% (30 days)</span>
-                </div>
-              </div>
+        <!-- Messages section -->
+        <div class="messages_page">
+          <h6 class="title">All Messages</h6>
+          <div class="filter_sec">
+            <div class="search_input_container">
+              <input
+                type="search"
+                class="form-control search_input"
+                placeholder="Search"
+              />
             </div>
-            <div class="col">
-              <div class="card">
-                <div class="icon_text_container">
-                  <img
-                    src="./assets/imgs/home/green_text_icon.svg"
-                    alt="green_text_icon.svg"
-                  />
-                  <div class="card_data_container">
-                    <p class="card_data">Left Of 1000</p>
-                    <div class="card_value">700</div>
-                  </div>
-                </div>
-                <div class="percent_days_container">
-                  <img
-                    src="./assets/imgs/home/green_up_arrow.svg"
-                    alt="green_up_arrow.svg"
-                  />
-                  <span>70% (30 days)</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card">
-                <div class="icon_text_container">
-                  <img
-                    src="./assets/imgs/home/red_text_icon.svg"
-                    alt="red_text_icon.svg"
-                  />
-                  <div class="card_data_container">
-                    <p class="card_data">Total Usage</p>
-                    <div class="card_value">300</div>
-                  </div>
-                </div>
-                <div class="percent_days_container">
-                  <img
-                    src="./assets/imgs/home/red_down_arrow.svg"
-                    alt="red_down_arrow.svg"
-                  />
-                  <span>30% (30 days)</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card renew_card">
-                <div>
-                  <p class="renew_info">20 Days To Renew</p>
-                  <p class="renew_date">(26 Aug 2024)</p>
-                </div>
-                <div>
-                  <button class="btn btn_renew">
-                    <span>Renew</span>
-                    <img
-                      class="renew_icon"
-                      src="./assets/imgs/home/renew_icon.svg"
-                      alt="renew_icon.svg"
-                    />
-                  </button>
-                </div>
-              </div>
-            </div>
+            <button
+              class="btn"
+              type="button"
+              class="btn"
+              data-bs-toggle="modal"
+              data-bs-target="#filterModal"
+            >
+              <img
+                src="./assets/imgs/messages/filter_icon.svg"
+                alt="filter_icon.svg"
+              />
+            </button>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-xl-7">
-            <div class="table_container">
-              <p class="table_caption">Last Massages</p>
-
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th class="text-start px-3" scope="col">Platform</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Time</th>
-                    <th scope="col">Status</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th class="px-3 text-start" scope="row">
-                      <img src="./assets/imgs/home/home_logo.svg" alt="" />
-                    </th>
-                    <td>Annan Essam</td>
-                    <td>05:00PM</td>
-                    <td>Sent</td>
-                  </tr>
-                  <tr>
-                    <th class="text-start px-3" scope="row">
-                      <img src="./assets/imgs/home/WhatsApp.svg" alt="" />
-                    </th>
-                    <td>Mohamed MonGe</td>
-                    <td>05:00PM</td>
-                    <td>Unsent</td>
-                  </tr>
-                  <tr>
-                    <th class="px-3 text-start" scope="row">
-                      <img src="./assets/imgs/home/home_logo.svg" alt="" />
-                    </th>
-                    <td>Annan Essam</td>
-                    <td>05:00PM</td>
-                    <td>Sent</td>
-                  </tr>
-                  <tr>
-                    <th class="text-start px-3" scope="row">
-                      <img src="./assets/imgs/home/WhatsApp.svg" alt="" />
-                    </th>
-                    <td>Mohamed MonGe</td>
-                    <td>05:00PM</td>
-                    <td>Unsent</td>
-                  </tr>
-                  <tr>
-                    <th class="text-start px-3" scope="row">
-                      <img src="./assets/imgs/home/WhatsApp.svg" alt="" />
-                    </th>
-                    <td>Mohamed MonGe</td>
-                    <td>05:00PM</td>
-                    <td>Unsent</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div class="col-xl-5">
-            <div class="graph_container">
-              <div class="text-center">
-                <img src="./assets/imgs/home/graph.png" alt="graph.png" />
-              </div>
-              <div class="d-flex gap_45 flex_wrap_1200">
-                <div class="graph_data_container">
-                  <div>
-                    1000
-                    <br />
-                    Massage
-                  </div>
-
-                  <div>
-                    700
-                    <br />
-
-                    Left
-                  </div>
-                  <div>
-                    300
-                    <br />
-                    Usage
-                  </div>
-                </div>
-                <div>
-                  <button class="btn btn_renew">
-                    <span>Renew</span>
-                    <img
-                      class="renew_icon"
-                      src="./assets/imgs/home/renew_icon.svg"
-                      alt="renew_icon.svg"
-                    />
-                  </button>
-                </div>
-              </div>
-            </div>
+          <div class="table_container">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th class="text-start px-3" scope="col">Platform</th>
+                  <th scope="col">Client’s Name</th>
+                  <th scope="col">Messagea</th>
+                  <th scope="col">Date Of Dispatch</th>
+                  <th scope="col">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="px-3 text-start" scope="row">
+                    <img src="./assets/imgs/home/home_logo.svg" alt="" />
+                  </td>
+                  <td>Annan Essam</td>
+                  <td>05:00PM</td>
+                  <td>Sent</td>
+                  <td class="success">Successful</td>
+                </tr>
+                <tr>
+                  <td class="text-start px-3" scope="row">
+                    <img src="./assets/imgs/home/WhatsApp.svg" alt="" />
+                  </td>
+                  <td>Annan Essam</td>
+                  <td>Lorem ipsum dolor sit amet</td>
+                  <td>05:00PM</td>
+                  <td class="success">Successful</td>
+                </tr>
+                <tr>
+                  <td class="px-3 text-start" scope="row">
+                    <img src="./assets/imgs/home/home_logo.svg" alt="" />
+                  </td>
+                  <td>Annan Essam</td>
+                  <td>05:00PM</td>
+                  <td>Sent</td>
+                  <td class="failed">Failed</td>
+                </tr>
+                <tr>
+                  <td class="text-start px-3" scope="row">
+                    <img src="./assets/imgs/home/WhatsApp.svg" alt="" />
+                  </td>
+                  <td>Mohamed MonGe</td>
+                  <td>05:00PM</td>
+                  <td>Unsent</td>
+                  <td class="success">Successful</td>
+                </tr>
+                <tr>
+                  <td class="text-start px-3" scope="row">
+                    <img src="./assets/imgs/home/WhatsApp.svg" alt="" />
+                  </td>
+                  <td>Mohamed MonGe</td>
+                  <td>05:00PM</td>
+                  <td>Unsent</td>
+                  <td class="success">Successful</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- filter Modal -->
+    <!-- Modal -->
+    <div class="modal fade filterModal" id="filterModal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <hr class="hr" />
+          <div class="modal-header">
+            <h1 class="modal-title">Status</h1>
+            <span class="btn" data-bs-dismiss="modal">
+              <img src="./assets/imgs/messages/close_icon.svg" alt="" />
+            </span>
+          </div>
+          <hr class="hr" />
+
+          <div class="modal-body">
+            <div class="position-relative">
+              <label for="success_msg">Successful Messages</label>
+              <input
+                type="radio"
+                id="success_msg"
+                class="btn checkbox_input"
+                name="status"
+              />
+            </div>
+            <div class="position-relative">
+              <label for="failed_msg">Failed Messages</label>
+              <input
+                type="radio"
+                id="failed_msg"
+                class="btn checkbox_input"
+                name="status"
+              />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn_filter">Filter</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- filter Modal -->
 
     <!-- Global Bootstrap CDN V5.3.2  -->
     <script

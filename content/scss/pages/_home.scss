@@ -1,21 +1,38 @@
 .dashboard_container {
   display: flex;
   .aside {
+    width: 36%;
     width: 271px;
     background-color: #017dc0;
     height: 100%;
     height: 100vh;
-
+    height: auto;
+    @include responsive(max, 768px) {
+      width: 27%;
+      display: none;
+    }
+    @include responsive(max, 768px) {
+      width: 39%;
+    }
+    @include responsive(max, 425px) {
+      width: 50%;
+    }
     .asid_container {
       padding-top: 48px;
       padding-left: 42px;
       padding: 47px;
+      @include responsive(max, 768px) {
+        padding: 10px;
+      }
       .aside_logo_container {
         background-color: #fff;
         padding: 25px 39px;
         border-radius: 16px;
         margin-bottom: 64px;
         display: flex;
+        @include responsive(max, 768px) {
+          padding: 10px;
+        }
         .aside_logo {
           width: 100%;
         }
@@ -34,11 +51,23 @@
         padding-left: 13px;
         padding-top: 8px;
         padding-bottom: 8px;
+        @include responsive(max, 768px) {
+          width: 100%;
+          height: auto;
+          padding-left: 10px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+        }
         &.active {
           background-color: white;
           border-radius: 16px;
           .nav-link {
             color: #017dc0;
+          }
+          svg {
+            path {
+              stroke: #017dc0;
+            }
           }
         }
       }
@@ -48,17 +77,27 @@
         font-weight: 500;
         line-height: 19.2px;
         padding-left: 0;
+        @include responsive(max, 768px) {
+          // display: none;
+        }
       }
     }
   }
 
   .navbar {
     display: flex;
-    gap: 127px;
+    gap: 11%;
+    // gap: 127px;
     align-items: center;
-    border: 1px solid;
     max-height: 80px;
     margin-bottom: 32px;
+    @include responsive(max, 425px) {
+      max-height: initial;
+    }
+
+    @include responsive(max, 1300px) {
+      gap: 2%;
+    }
     .welcome_msg {
       font-size: 16px;
       font-weight: 700;
@@ -68,11 +107,19 @@
     .search_input_container {
       position: relative;
       flex: 1;
+
       &::before {
         content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxOCAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTcuNTMyMjMgMTQuMDMzMkM4LjkyOTY5IDE0LjAzMzIgMTAuMjM5MyAxMy42MTEzIDExLjMyOTEgMTIuODkwNkwxNS4xNzg3IDE2Ljc0OUMxNS40MzM2IDE2Ljk5NTEgMTUuNzU4OCAxNy4xMTgyIDE2LjExMDQgMTcuMTE4MkMxNi44Mzk4IDE3LjExODIgMTcuMzc2IDE2LjU0NjkgMTcuMzc2IDE1LjgyNjJDMTcuMzc2IDE1LjQ5MjIgMTcuMjYxNyAxNS4xNjcgMTcuMDE1NiAxNC45MjA5TDEzLjE5MjQgMTEuMDgwMUMxMy45ODM0IDkuOTU1MDggMTQuNDQ5MiA4LjU5Mjc3IDE0LjQ0OTIgNy4xMTYyMUMxNC40NDkyIDMuMzEwNTUgMTEuMzM3OSAwLjE5OTIxOSA3LjUzMjIzIDAuMTk5MjE5QzMuNzM1MzUgMC4xOTkyMTkgMC42MTUyMzQgMy4zMTA1NSAwLjYxNTIzNCA3LjExNjIxQzAuNjE1MjM0IDEwLjkyMTkgMy43MjY1NiAxNC4wMzMyIDcuNTMyMjMgMTQuMDMzMlpNNy41MzIyMyAxMi4xODc1QzQuNzQ2MDkgMTIuMTg3NSAyLjQ2MDk0IDkuOTAyMzQgMi40NjA5NCA3LjExNjIxQzIuNDYwOTQgNC4zMzAwOCA0Ljc0NjA5IDIuMDQ0OTIgNy41MzIyMyAyLjA0NDkyQzEwLjMxODQgMi4wNDQ5MiAxMi42MDM1IDQuMzMwMDggMTIuNjAzNSA3LjExNjIxQzEyLjYwMzUgOS45MDIzNCAxMC4zMTg0IDEyLjE4NzUgNy41MzIyMyAxMi4xODc1WiIgZmlsbD0iIzNDM0M0MyIgZmlsbC1vcGFjaXR5PSIwLjYiLz4KPC9zdmc+Cg==");
         position: absolute;
         top: 14px;
         left: 10px;
+        @include responsive(max, 850px) {
+          display: none;
+        }
+      }
+      @include responsive(max, 850px) {
+        justify-content: center;
+        display: flex;
       }
       .search_input {
         // width: 459px;
@@ -81,14 +128,39 @@
         background-color: #e3e2e2;
         border: none;
         padding-left: 36px;
+        @include responsive(max, 850px) {
+          display: none;
+        }
       }
+      .search_icon_responsive {
+        display: none;
+        @include responsive(max, 850px) {
+          display: block;
+          width: 28px;
+          height: 28px;
+          cursor: pointer;
+        }
+      }
+      // .search_form {
+
+      // }
     }
     .profile_notification_container {
       display: flex;
       align-items: center;
       gap: 32px;
+      @include responsive(max, 1000px) {
+        gap: 0;
+      }
       .dropdown-toggle {
         border: none;
+      }
+      .dropdown-menu {
+        left: initial;
+        right: 0;
+        @include responsive(max, 425px) {
+          left: 0;
+        }
       }
     }
     .profile_data_container {
@@ -99,6 +171,24 @@
         gap: 16px;
         align-items: center;
       }
+      .hide_when_1000 {
+        @include responsive(max, 1000px) {
+          display: none;
+        }
+      }
+      .dropdown-menu {
+        left: initial;
+        right: 0;
+        @include responsive(max, 425px) {
+          left: 0;
+        }
+      }
+    }
+    .btn_toggler {
+      display: none;
+      @include responsive(max, 768px) {
+        display: block;
+      }
     }
   }
 
@@ -108,6 +198,9 @@
     margin-bottom: 57px;
     .row {
       gap: 24px;
+      .col {
+        padding-inline: 0;
+      }
     }
     .card {
       // width: 244px;
@@ -154,7 +247,7 @@
     }
     .renew_card {
       // width: 300px;
-      padding: 34px 19px;
+      padding: 30px 17px;
       display: flex;
       flex-direction: row;
       gap: 24px;
@@ -195,6 +288,14 @@
     padding: 32px;
     border-radius: 16px;
     margin-bottom: 166px;
+
+    @include responsive(max, 1024px) {
+      margin-bottom: 2rem;
+    }
+    @include responsive(max, 425px) {
+      padding: 10px;
+      overflow-x: scroll;
+    }
     .table_caption {
       font-size: 16px;
       font-weight: 700;
@@ -219,8 +320,12 @@
     display: flex;
     flex-direction: column;
     gap: 34px;
-    width: 366px;
-    width: 86%;
+    // width: 366px;
+    // width: 86%;
+    width: 100%;
+    @include responsive(max, 1024px) {
+      margin-bottom: 2rem;
+    }
     .graph_data_container {
       display: flex;
       align-items: center;
@@ -238,6 +343,11 @@
       display: flex;
       gap: 8px;
       align-items: center;
+    }
+    .flex_wrap_1200 {
+      @include responsive(max, 1200px) {
+        flex-wrap: wrap;
+      }
     }
   }
 }

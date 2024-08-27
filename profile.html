@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard - Home Page</title>
+    <title>Dashboard - Profile</title>
 
     <!-- Global bootstrap CDN V5.3.2 for ltr -->
     <link
@@ -260,7 +260,6 @@
           </button>
         </nav>
         <!-- Aside responsive -->
-
         <aside
           class="aside d-block aside_mob offcanvas offcanvas-start"
           data-bs-scroll="true"
@@ -388,190 +387,96 @@
             </ul>
           </div>
         </aside>
-        <!-- cards container -->
-        <div class="cards_container">
-          <div class="row px-3">
-            <div class="col">
-              <div class="card">
-                <div class="icon_text_container">
-                  <img
-                    src="./assets/imgs/home/blue_text_icon.svg"
-                    alt="blue_text_icon.svg"
-                  />
-                  <div class="card_data_container">
-                    <p class="card_data">Total Massage</p>
-                    <div class="card_value">1000</div>
-                  </div>
-                </div>
-                <div class="percent_days_container">
-                  <img
-                    src="./assets/imgs/home/green_up_arrow.svg"
-                    alt="green_up_arrow.svg"
-                  />
-                  <span>0% (30 days)</span>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <div class="icon_text_container">
-                  <img
-                    src="./assets/imgs/home/green_text_icon.svg"
-                    alt="green_text_icon.svg"
-                  />
-                  <div class="card_data_container">
-                    <p class="card_data">Left Of 1000</p>
-                    <div class="card_value">700</div>
-                  </div>
-                </div>
-                <div class="percent_days_container">
-                  <img
-                    src="./assets/imgs/home/green_up_arrow.svg"
-                    alt="green_up_arrow.svg"
-                  />
-                  <span>70% (30 days)</span>
-                </div>
-              </div>
-            </div>
+        <!-- profile section -->
 
-            <div class="col">
-              <div class="card">
-                <div class="icon_text_container">
-                  <img
-                    src="./assets/imgs/home/red_text_icon.svg"
-                    alt="red_text_icon.svg"
-                  />
-                  <div class="card_data_container">
-                    <p class="card_data">Total Usage</p>
-                    <div class="card_value">300</div>
-                  </div>
-                </div>
-                <div class="percent_days_container">
-                  <img
-                    src="./assets/imgs/home/red_down_arrow.svg"
-                    alt="red_down_arrow.svg"
-                  />
-                  <span>30% (30 days)</span>
-                </div>
-              </div>
+        <div class="setting_page profile_page">
+          <div class="user_profile_container">
+            <div class="position-relative">
+              <img
+                class="user_img"
+                src="./assets/imgs/setting/user_img.png"
+                alt="user_img.png"
+              />
+              <img
+                class="edit_img_icon"
+                src="./assets/imgs/setting/edit_img_icon.svg"
+                alt="edit_img_icon.svg"
+              />
             </div>
-
-            <div class="col">
-              <div class="card renew_card">
-                <div>
-                  <p class="renew_info">20 Days To Renew</p>
-                  <p class="renew_date">(26 Aug 2024)</p>
-                </div>
-                <div>
-                  <button class="btn btn_renew">
-                    <span>Renew</span>
-                    <img
-                      class="renew_icon"
-                      src="./assets/imgs/home/renew_icon.svg"
-                      alt="renew_icon.svg"
-                    />
-                  </button>
-                </div>
-              </div>
+            <div>
+              <p class="user_name">Anan Essam</p>
+              <p class="user_desc">hgygudwgghsg</p>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-xl-7">
-            <div class="table_container">
-              <p class="table_caption">Last Massages</p>
-
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th class="text-start px-3" scope="col">Platform</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Time</th>
-                    <th scope="col">Status</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th class="px-3 text-start" scope="row">
-                      <img src="./assets/imgs/home/home_logo.svg" alt="" />
-                    </th>
-                    <td>Annan Essam</td>
-                    <td>05:00PM</td>
-                    <td>Sent</td>
-                  </tr>
-                  <tr>
-                    <th class="text-start px-3" scope="row">
-                      <img src="./assets/imgs/home/WhatsApp.svg" alt="" />
-                    </th>
-                    <td>Mohamed MonGe</td>
-                    <td>05:00PM</td>
-                    <td>Unsent</td>
-                  </tr>
-                  <tr>
-                    <th class="px-3 text-start" scope="row">
-                      <img src="./assets/imgs/home/home_logo.svg" alt="" />
-                    </th>
-                    <td>Annan Essam</td>
-                    <td>05:00PM</td>
-                    <td>Sent</td>
-                  </tr>
-                  <tr>
-                    <th class="text-start px-3" scope="row">
-                      <img src="./assets/imgs/home/WhatsApp.svg" alt="" />
-                    </th>
-                    <td>Mohamed MonGe</td>
-                    <td>05:00PM</td>
-                    <td>Unsent</td>
-                  </tr>
-                  <tr>
-                    <th class="text-start px-3" scope="row">
-                      <img src="./assets/imgs/home/WhatsApp.svg" alt="" />
-                    </th>
-                    <td>Mohamed MonGe</td>
-                    <td>05:00PM</td>
-                    <td>Unsent</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div class="col-xl-5">
-            <div class="graph_container">
-              <div class="text-center">
-                <img src="./assets/imgs/home/graph.png" alt="graph.png" />
-              </div>
-              <div class="d-flex gap_45 flex_wrap_1200">
-                <div class="graph_data_container">
-                  <div>
-                    1000
-                    <br />
-                    Massage
-                  </div>
-
-                  <div>
-                    700
-                    <br />
-
-                    Left
-                  </div>
-                  <div>
-                    300
-                    <br />
-                    Usage
-                  </div>
-                </div>
-                <div>
-                  <button class="btn btn_renew">
-                    <span>Renew</span>
-                    <img
-                      class="renew_icon"
-                      src="./assets/imgs/home/renew_icon.svg"
-                      alt="renew_icon.svg"
+          <div class="personal_data_wrapper">
+            <form action="">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="input_group">
+                    <label for="first_name" class="label_class"
+                      >First Name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control input_class"
+                      id="first_name"
+                      name="first_name"
                     />
-                  </button>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="input_group">
+                    <label for="last_name" class="label_class">Last Name</label>
+                    <input
+                      type="text"
+                      class="form-control input_class"
+                      name="last_name"
+                      id="last_name"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="input_group">
+                    <label for="phone" class="label_class">Phone Number</label>
+                    <input
+                      type="number"
+                      id="phone"
+                      name="phone"
+                      class="form-control input_class"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="input_group">
+                    <label for="email" class="label_class">E-mail</label>
+                    <input
+                      type="text"
+                      id="email"
+                      name="email"
+                      class="form-control input_class"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="input_group">
+                    <label for="company_name" class="label_class"
+                      >Company’s Name</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control input_class"
+                      id="company_name"
+                    />
+                  </div>
+                </div>
+                <div class="d-flex justify-content-end">
+                  <button class="btn btn_save">Save</button>
                 </div>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>

@@ -1,0 +1,100 @@
+.setting_page {
+  padding-right: 15px;
+  margin-bottom: 10%;
+  .user_profile_container {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    margin-bottom: 32px;
+    .user_img {
+      width: 104px;
+      height: 104px;
+      border-radius: 50%;
+    }
+    .edit_img_icon {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+    .user_name {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 28.8px;
+      color: #3d3d3d;
+      margin-bottom: 8px;
+    }
+    .user_desc {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 19.2px;
+      color: #1f1f1f80;
+    }
+  }
+
+  .personal_data_wrapper {
+    padding: 64px;
+    border-radius: 16px;
+    border: 1px solid #e3e2e2;
+    @include responsive(max,425px){
+      padding: 35px;
+    }
+    .personal_info_container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 48px;
+      .personal_info_head {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 19.2px;
+        color: #3d3d3d;
+      }
+      .btn_edit {
+        background-color: #017dc0;
+        border-radius: 8px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19.2px;
+        color: white;
+        gap: 8px;
+        padding: 12px 27px;
+      }
+    }
+
+    .label_data_container {
+      display: flex;
+      justify-content: space-between;
+      width: 57%;
+      margin-bottom: 32px;
+      @include responsive(max, 768px) {
+        width: 100%;
+      }
+      @include responsive(max, 425px) {
+        flex-wrap: wrap;
+      }
+      div {
+        @include responsive(max, 425px) {
+          width: 100%;
+          margin-bottom: 2rem;
+        }
+      }
+      .user_label_data {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.8px;
+        color: #1f1f1f80;
+        margin-bottom: 8px;
+      }
+      .user_data_value {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 19.2px;
+        color: #3d3d3d;
+      }
+    }
+  }
+}
