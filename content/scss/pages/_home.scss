@@ -1,0 +1,243 @@
+.dashboard_container {
+  display: flex;
+  .aside {
+    width: 271px;
+    background-color: #017dc0;
+    height: 100%;
+    height: 100vh;
+
+    .asid_container {
+      padding-top: 48px;
+      padding-left: 42px;
+      padding: 47px;
+      .aside_logo_container {
+        background-color: #fff;
+        padding: 25px 39px;
+        border-radius: 16px;
+        margin-bottom: 64px;
+        display: flex;
+        .aside_logo {
+          width: 100%;
+        }
+      }
+
+      .nav {
+        gap: 24px;
+      }
+
+      .nav-item {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        width: 185px;
+        height: 40px;
+        padding-left: 13px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        &.active {
+          background-color: white;
+          border-radius: 16px;
+          .nav-link {
+            color: #017dc0;
+          }
+        }
+      }
+      .nav-link {
+        color: white;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19.2px;
+        padding-left: 0;
+      }
+    }
+  }
+
+  .navbar {
+    display: flex;
+    gap: 127px;
+    align-items: center;
+    border: 1px solid;
+    max-height: 80px;
+    margin-bottom: 32px;
+    .welcome_msg {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 19.2px;
+      color: #3d3d3d;
+    }
+    .search_input_container {
+      position: relative;
+      flex: 1;
+      &::before {
+        content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxOCAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTcuNTMyMjMgMTQuMDMzMkM4LjkyOTY5IDE0LjAzMzIgMTAuMjM5MyAxMy42MTEzIDExLjMyOTEgMTIuODkwNkwxNS4xNzg3IDE2Ljc0OUMxNS40MzM2IDE2Ljk5NTEgMTUuNzU4OCAxNy4xMTgyIDE2LjExMDQgMTcuMTE4MkMxNi44Mzk4IDE3LjExODIgMTcuMzc2IDE2LjU0NjkgMTcuMzc2IDE1LjgyNjJDMTcuMzc2IDE1LjQ5MjIgMTcuMjYxNyAxNS4xNjcgMTcuMDE1NiAxNC45MjA5TDEzLjE5MjQgMTEuMDgwMUMxMy45ODM0IDkuOTU1MDggMTQuNDQ5MiA4LjU5Mjc3IDE0LjQ0OTIgNy4xMTYyMUMxNC40NDkyIDMuMzEwNTUgMTEuMzM3OSAwLjE5OTIxOSA3LjUzMjIzIDAuMTk5MjE5QzMuNzM1MzUgMC4xOTkyMTkgMC42MTUyMzQgMy4zMTA1NSAwLjYxNTIzNCA3LjExNjIxQzAuNjE1MjM0IDEwLjkyMTkgMy43MjY1NiAxNC4wMzMyIDcuNTMyMjMgMTQuMDMzMlpNNy41MzIyMyAxMi4xODc1QzQuNzQ2MDkgMTIuMTg3NSAyLjQ2MDk0IDkuOTAyMzQgMi40NjA5NCA3LjExNjIxQzIuNDYwOTQgNC4zMzAwOCA0Ljc0NjA5IDIuMDQ0OTIgNy41MzIyMyAyLjA0NDkyQzEwLjMxODQgMi4wNDQ5MiAxMi42MDM1IDQuMzMwMDggMTIuNjAzNSA3LjExNjIxQzEyLjYwMzUgOS45MDIzNCAxMC4zMTg0IDEyLjE4NzUgNy41MzIyMyAxMi4xODc1WiIgZmlsbD0iIzNDM0M0MyIgZmlsbC1vcGFjaXR5PSIwLjYiLz4KPC9zdmc+Cg==");
+        position: absolute;
+        top: 14px;
+        left: 10px;
+      }
+      .search_input {
+        // width: 459px;
+        height: 48px;
+        border-radius: 10px;
+        background-color: #e3e2e2;
+        border: none;
+        padding-left: 36px;
+      }
+    }
+    .profile_notification_container {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      .dropdown-toggle {
+        border: none;
+      }
+    }
+    .profile_data_container {
+      display: flex;
+      gap: 16px;
+      .flex_content {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+      }
+    }
+  }
+
+  .cards_container {
+    // display: flex;
+    gap: 24px;
+    margin-bottom: 57px;
+    .row {
+      gap: 24px;
+    }
+    .card {
+      // width: 244px;
+      // height: 112px;
+      padding: 16px;
+      border-radius: 16px;
+
+      border: 1px solid #e3e2e2;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      .icon_text_container {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        .card_data_container {
+          display: flex;
+          flex-direction: column;
+          gap: 4px;
+
+          .card_data {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16.8px;
+            color: #1f1f1f80;
+          }
+          .card_value {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 28.8px;
+            color: #3d3d3d;
+          }
+        }
+      }
+      .percent_days_container {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+        color: #a3a3a3;
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+    }
+    .renew_card {
+      // width: 300px;
+      padding: 34px 19px;
+      display: flex;
+      flex-direction: row;
+      gap: 24px;
+      background-color: #017dc0;
+      .renew_info {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19.2px;
+        margin-bottom: 4px;
+        color: white;
+      }
+      .renew_date {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.8px;
+        color: #e3e2e2;
+      }
+      .btn_renew {
+        height: 44px;
+        border-radius: 10.18px;
+        background-color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19.2px;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        .renew_icon {
+          width: 24px;
+          height: 24px;
+        }
+      }
+    }
+  }
+
+  .table_container {
+    border: 1px solid #e3e2e2;
+    padding: 32px;
+    border-radius: 16px;
+    margin-bottom: 166px;
+    .table_caption {
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 19.2px;
+      color: #1f1f1f80;
+      margin-bottom: 24px;
+    }
+    .table {
+      tr,
+      td,
+      th {
+        border: none;
+        text-align: center;
+      }
+    }
+  }
+
+  .graph_container {
+    border: 1px solid #e3e2e2;
+    border-radius: 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+    width: 366px;
+    width: 86%;
+    .graph_data_container {
+      display: flex;
+      align-items: center;
+      gap: 19px;
+    }
+
+    .btn_renew {
+      background-color: #10994d;
+      color: white;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 19.2px;
+      padding: 12px 14px;
+      border-radius: 10.18px;
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+  }
+}
