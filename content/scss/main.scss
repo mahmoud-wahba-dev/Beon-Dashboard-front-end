@@ -11,17 +11,17 @@ body {
 
 // // base
 // @import "./base/base";
-// @import "./base/reset";
+@import "./reset/reset";
 
 // components
 // @import "./components/language";
 
 // layout
-// @import "./layout/nav";
+@import "./layout/navbar";
+@import "./layout/aside";
 // pages
 @import "./general/general";
 
-@import "./reset/reset";
 @import "./pages/sign_in";
 @import "./pages/forgot_password";
 @import "./pages/verification_code";
@@ -31,7 +31,3 @@ body {
 @import "./pages/setting";
 @import "./pages/profile";
 @import "./pages/messages";
-
-
-
-

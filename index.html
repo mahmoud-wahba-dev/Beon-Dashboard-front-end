@@ -156,7 +156,29 @@
               class="search_icon_responsive"
               src="./assets/imgs/home/search.svg"
               alt="search.svg"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvas_search"
             />
+
+            <!-- search offcanvas -->
+            <div
+              class="offcanvas search_offcanvas offcanvas-top"
+              data-bs-scroll="true"
+              data-bs-backdrop="true"
+              tabindex="-1"
+              id="offcanvas_search"
+              aria-labelledby="offcanvasScrollingLabel"
+            >
+              <form action="" class="search_form">
+                <input
+                  type="search"
+                  class="form-control search_input_offcanvas"
+                  placeholder="Search"
+                />
+              </form>
+            </div>
+            <!-- search offcanvas -->
+
             <form action="" class="search_form">
               <input
                 type="search"
@@ -166,12 +188,12 @@
             </form>
           </div>
           <div class="profile_notification_container">
-            <div class="dropdown notification_container">
+            <div class="notification_container">
               <button
-                class="btn dropdown-toggle"
+                class="btn"
                 type="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNotification"
               >
                 <span>
                   <svg
@@ -204,7 +226,7 @@
                     <path
                       d="M18 11C19.6569 11 21 9.65685 21 8C21 6.34315 19.6569 5 18 5C16.3431 5 15 6.34315 15 8C15 9.65685 16.3431 11 18 11Z"
                       fill="#ED2121"
-                      class="d-none"
+                      class="show"
                       stroke="#ED2121"
                       stroke-width="1.5"
                       stroke-linecap="round"
@@ -213,13 +235,76 @@
                   </svg>
                 </span>
               </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
+
+              <!-- notification offcanvas -->
+              <div
+                class="offcanvas offcanvas-top"
+                data-bs-scroll="true"
+                data-bs-backdrop="false"
+                tabindex="-1"
+                id="offcanvasNotification"
+                aria-labelledby="offcanvasScrollingLabel"
+              >
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+                    Notifications.
+                  </h5>
+                  <button type="button" class="btn btn_read">
+                    Mark All As Read
+                  </button>
+                </div>
+                <div class="offcanvas-body">
+                  <div class="day">Today</div>
+                  <div class="notification_item">
+                    <p class="title">Lorem ipsum dolor sit amet.</p>
+                    <p class="subtitle">
+                      Lorem ipsum dolor sit amet consectetur. Tortor id dolor
+                      posuere diam nec lorem. Tincidunt tincidunt pellentesque
+                      vel a mattis. .
+                    </p>
+                  </div>
+
+                  <div class="notification_item">
+                    <p class="title">Lorem ipsum dolor sit amet.</p>
+                    <p class="subtitle">
+                      Lorem ipsum dolor sit amet consectetur. Tortor id dolor
+                      posuere diam nec lorem. Tincidunt tincidunt pellentesque
+                      vel a mattis. .
+                    </p>
+                  </div>
+
+                  <div class="notification_item">
+                    <p class="title">Lorem ipsum dolor sit amet.</p>
+                    <p class="subtitle">
+                      Lorem ipsum dolor sit amet consectetur. Tortor id dolor
+                      posuere diam nec lorem. Tincidunt tincidunt pellentesque
+                      vel a mattis. .
+                    </p>
+                  </div>
+
+                  <div class="notification_item">
+                    <p class="title">Lorem ipsum dolor sit amet.</p>
+                    <p class="subtitle">
+                      Lorem ipsum dolor sit amet consectetur. Tortor id dolor
+                      posuere diam nec lorem. Tincidunt tincidunt pellentesque
+                      vel a mattis. .
+                    </p>
+                  </div>
+
+                  <div class="notification_item">
+                    <p class="title">Lorem ipsum dolor sit amet.</p>
+                    <p class="subtitle">
+                      Lorem ipsum dolor sit amet consectetur. Tortor id dolor
+                      posuere diam nec lorem. Tincidunt tincidunt pellentesque
+                      vel a mattis. .
+                    </p>
+                  </div>
+                </div>
+                <div class="offcanvas-footer">
+                  <a class="btn btn_view_all_not">View All Notification.</a>
+                </div>
+              </div>
+              <!-- notification offcanvas -->
             </div>
 
             <div class="dropdown profile_data_container">
