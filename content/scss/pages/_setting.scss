@@ -1,5 +1,5 @@
 .setting_page {
-  padding-right: 15px;
+  padding-#{$e}: 15px;
   margin-bottom: 10%;
   .user_profile_container {
     display: flex;
@@ -14,7 +14,7 @@
     .edit_img_icon {
       position: absolute;
       bottom: 0;
-      right: 0;
+      #{$e}: 0;
     }
     .user_name {
       font-size: 24px;

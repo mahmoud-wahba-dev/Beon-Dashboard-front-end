@@ -3,8 +3,8 @@
     background-color: #369eff;
     .gif_container {
       padding-top: 94px;
-      padding-left: 107px;
-      padding-right: 100px;
+      padding-#{$s}: 107px;
+      padding-#{$e}: 100px;
       padding-bottom: 88px;
 
       width: 500px;
@@ -22,8 +22,8 @@
       line-height: 60.48px;
       color: white;
       margin-bottom: 32px;
-      margin-left: 64px;
-      margin-right: 57px;
+      margin-#{$s}: 64px;
+      margin-#{$e}: 57px;
       margin-bottom: 32px;
       @include responsive(max, 320px) {
         font-size: 36px;
@@ -36,7 +36,7 @@
       line-height: 30.24px;
       color: #ffffffcc;
       padding-bottom: 94px;
-      margin-left: 64px;
+      margin-#{$s}: 64px;
       @include responsive(max, 320px) {
         font-size: 20px;
         margin: 20px;
@@ -48,9 +48,9 @@
     justify-content: flex-end;
     align-items: center;
     height: 100%;
-    padding-right: 72px;
+    padding-#{$e}: 72px;
     @include responsive(max, 1200px) {
-      padding-right: 30px;
+      padding-#{$e}: 30px;
     }
     .subtitle {
       font-size: 30px;
@@ -74,7 +74,7 @@
       }
       @include responsive(max, 768px) {
         padding: 20px;
-        margin-right: 0;
+        margin-#{$e}: 0;
       }
     }
     .input_group {

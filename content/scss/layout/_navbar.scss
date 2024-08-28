@@ -7,6 +7,7 @@
   margin-bottom: 32px;
   @include responsive(max, 425px) {
     max-height: initial;
+    flex-wrap: nowrap;
   }
 
   @include responsive(max, 1300px) {
@@ -26,7 +27,7 @@
       content: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxOCAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTcuNTMyMjMgMTQuMDMzMkM4LjkyOTY5IDE0LjAzMzIgMTAuMjM5MyAxMy42MTEzIDExLjMyOTEgMTIuODkwNkwxNS4xNzg3IDE2Ljc0OUMxNS40MzM2IDE2Ljk5NTEgMTUuNzU4OCAxNy4xMTgyIDE2LjExMDQgMTcuMTE4MkMxNi44Mzk4IDE3LjExODIgMTcuMzc2IDE2LjU0NjkgMTcuMzc2IDE1LjgyNjJDMTcuMzc2IDE1LjQ5MjIgMTcuMjYxNyAxNS4xNjcgMTcuMDE1NiAxNC45MjA5TDEzLjE5MjQgMTEuMDgwMUMxMy45ODM0IDkuOTU1MDggMTQuNDQ5MiA4LjU5Mjc3IDE0LjQ0OTIgNy4xMTYyMUMxNC40NDkyIDMuMzEwNTUgMTEuMzM3OSAwLjE5OTIxOSA3LjUzMjIzIDAuMTk5MjE5QzMuNzM1MzUgMC4xOTkyMTkgMC42MTUyMzQgMy4zMTA1NSAwLjYxNTIzNCA3LjExNjIxQzAuNjE1MjM0IDEwLjkyMTkgMy43MjY1NiAxNC4wMzMyIDcuNTMyMjMgMTQuMDMzMlpNNy41MzIyMyAxMi4xODc1QzQuNzQ2MDkgMTIuMTg3NSAyLjQ2MDk0IDkuOTAyMzQgMi40NjA5NCA3LjExNjIxQzIuNDYwOTQgNC4zMzAwOCA0Ljc0NjA5IDIuMDQ0OTIgNy41MzIyMyAyLjA0NDkyQzEwLjMxODQgMi4wNDQ5MiAxMi42MDM1IDQuMzMwMDggMTIuNjAzNSA3LjExNjIxQzEyLjYwMzUgOS45MDIzNCAxMC4zMTg0IDEyLjE4NzUgNy41MzIyMyAxMi4xODc1WiIgZmlsbD0iIzNDM0M0MyIgZmlsbC1vcGFjaXR5PSIwLjYiLz4KPC9zdmc+Cg==");
       position: absolute;
       top: 14px;
-      left: 10px;
+      #{$s}: 10px;
       @include responsive(max, 850px) {
         display: none;
       }
@@ -41,7 +42,7 @@
       border-radius: 10px;
       background-color: #e3e2e2;
       border: none;
-      padding-left: 36px;
+      padding-#{$s}: 36px;
       @include responsive(max, 850px) {
         display: none;
       }
@@ -88,19 +89,19 @@
         width: 46%;
         border-radius: 16px;
         min-height: 80vh;
-        right: 10%;
+        #{$e}: 10%;
         top: 14%;
-        left: initial;
+        #{$s}: initial;
         @include responsive(max, 425px) {
           width: 90%;
-          left: 2%;
+          #{$s}: 2%;
         }
 
         .offcanvas-header {
           display: flex;
           justify-content: space-between;
           padding-top: 28px;
-          padding-left: 24px;
+          padding-#{$s}: 24px;
           padding-right: 24px;
           padding-bottom: 14px;
           border-bottom: 1px solid #e3e2e2;
@@ -138,7 +139,7 @@
         .offcanvas-body {
           padding: 0;
           .day {
-            padding-left: 16px;
+            padding-#{$s}: 16px;
             padding-top: 10px;
             padding-bottom: 10px;
             margin-top: 11px;
@@ -153,6 +154,13 @@
           }
           .notification_item {
             padding: 16px;
+            background-color: #e3e2e2;
+            &:visited {
+              background-color: white;
+            }
+            a {
+              text-decoration: none;
+            }
             .title {
               font-size: 20px;
               font-weight: 600;
@@ -226,10 +234,10 @@
       }
     }
     .dropdown-menu {
-      left: initial;
-      right: 0;
+      #{$s}: initial;
+      #{$e}: 0;
       @include responsive(max, 425px) {
-        left: 0;
+        #{$s}: 0;
       }
     }
   }

@@ -1,27 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
-body {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-optical-sizing: auto;
-}
-
 // abstracts
-// @import "./abstracts/variables";
 @import "./abstracts/mixins";
 @import "./general/general";
 
-// // base
-// @import "./base/base";
+//  base
+@import "./base/base";
+
+//  reset
 @import "./reset/reset";
 
 // components
-// @import "./components/language";
+@import "./components/components";
 
 // layout
 @import "./layout/navbar";
 @import "./layout/aside";
 // pages
 @import "./general/general";
-
 @import "./pages/sign_in";
 @import "./pages/forgot_password";
 @import "./pages/verification_code";

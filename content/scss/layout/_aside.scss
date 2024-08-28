@@ -1,14 +1,94 @@
+.aside {
+  width: 36%;
+  width: 271px;
+  background-color: #017dc0;
+  height: 100%;
+  height: 100vh;
+  height: auto;
+  @include responsive(max, 768px) {
+    width: 27%;
+    display: none;
+  }
+  @include responsive(max, 768px) {
+    width: 39%;
+  }
+  @include responsive(max, 425px) {
+    width: 50%;
+  }
+  .asid_container {
+    padding-top: 48px;
+    padding-#{$s}: 42px;
+    padding: 47px;
+    @include responsive(max, 768px) {
+      padding: 10px;
+    }
+    .aside_logo_container {
+      background-color: #fff;
+      padding: 25px 39px;
+      border-radius: 16px;
+      margin-bottom: 64px;
+      display: flex;
+      @include responsive(max, 768px) {
+        padding: 10px;
+      }
+      .aside_logo {
+        width: 100%;
+      }
+    }
 
-// body::-webkit-scrollbar {
-//     width: 12px;               /* width of the entire scrollbar */
-//   }
-  
-//   body::-webkit-scrollbar-track {
-//     background: orange;        /* color of the tracking area */
-//   }
-  
-//   body::-webkit-scrollbar-thumb {
-//     background-color: blue;    /* color of the scroll thumb */
-//     border-radius: 20px;       /* roundness of the scroll thumb */
-//     border: 3px solid orange;  /* creates padding around scroll thumb */
-//   }
+    .nav {
+      gap: 24px;
+    }
+
+    .nav-item {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      width: 185px;
+      height: 40px;
+      padding-#{$s}: 13px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      @include responsive(max, 768px) {
+        width: 100%;
+        height: auto;
+        padding-#{$s}: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+      &.active {
+        background-color: white;
+        border-radius: 16px;
+        .nav-link {
+          color: #017dc0;
+        }
+        svg {
+          path {
+            stroke: #017dc0;
+          }
+        }
+      }
+    }
+    .nav-link {
+      color: white;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 19.2px;
+      padding-#{$s}: 0;
+      @include responsive(max, 768px) {
+        // display: none;
+      }
+    }
+  }
+}
+
+.aside_mob {
+  @include responsive(max, 768px) {
+    // width: 27% !important;
+    max-width: 27%;
+  }
+
+  @include responsive(max, 425px) {
+    max-width: 50%;
+  }
+}
