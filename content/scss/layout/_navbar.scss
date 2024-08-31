@@ -138,6 +138,8 @@
         }
         .offcanvas-body {
           padding: 0;
+          // border-bottom-left-radius: 16px;
+          // border-bottom-right-radius: 16px;
           .day {
             padding-#{$s}: 16px;
             padding-top: 10px;

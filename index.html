@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard - Home Page</title>
+    <title>Sign In</title>
 
     <!-- Global bootstrap CDN V5.3.2 for ltr -->
     <link
@@ -16,676 +16,78 @@
     <link rel="stylesheet" href="./content/css/main-ltr.css" />
   </head>
   <body>
-    <div class="dashboard_container">
-      <!-- Sidebar/Aside -->
-      <aside class="aside">
-        <div class="asid_container">
-          <a href="" class="aside_logo_container">
-            <img
-              class="aside_logo"
-              src="./assets/imgs/home/home_logo.svg"
-              alt="home_logo.svg"
-            />
-          </a>
-          <ul class="nav flex-column">
-            <li class="nav-item active">
-              <span
-                ><svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M13 16.5H11C10.17 16.5 9.5 17.17 9.5 18V21.5H14.5V18C14.5 17.17 13.83 16.5 13 16.5Z"
-                    stroke="white"
-                    stroke-width="1.2"
-                    stroke-miterlimit="10"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M10.07 2.81997L3.14002 8.36997C2.36002 8.98997 1.86002 10.3 2.03002 11.28L3.36002 19.24C3.60002 20.66 4.96002 21.81 6.40002 21.81H17.6C19.03 21.81 20.4 20.65 20.64 19.24L21.97 11.28C22.13 10.3 21.63 8.98997 20.86 8.36997L13.93 2.82997C12.86 1.96997 11.13 1.96997 10.07 2.81997Z"
-                    stroke="white"
-                    stroke-width="1.2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </span>
-              <a class="nav-link active" aria-current="page" href="/"
-                >Homepage</a
-              >
-            </li>
-            <li class="nav-item">
-              <span>
-                <svg
-                  width="25"
-                  height="24"
-                  viewBox="0 0 25 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M18.48 10.79V14.79C18.48 15.05 18.47 15.3 18.44 15.54C18.21 18.24 16.62 19.58 13.69 19.58H13.29C13.04 19.58 12.8 19.7 12.65 19.9L11.45 21.5C10.92 22.21 10.06 22.21 9.53 21.5L8.32999 19.9C8.19999 19.73 7.91 19.58 7.69 19.58H7.29001C4.10001 19.58 2.5 18.79 2.5 14.79V10.79C2.5 7.86001 3.85001 6.27001 6.54001 6.04001C6.78001 6.01001 7.03001 6 7.29001 6H13.69C16.88 6 18.48 7.60001 18.48 10.79Z"
-                    stroke="white"
-                    stroke-width="1.5"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M22.48 6.79001V10.79C22.48 13.73 21.13 15.31 18.44 15.54C18.47 15.3 18.48 15.05 18.48 14.79V10.79C18.48 7.60001 16.88 6 13.69 6H7.29004C7.03004 6 6.78004 6.01001 6.54004 6.04001C6.77004 3.35001 8.36004 2 11.29 2H17.69C20.88 2 22.48 3.60001 22.48 6.79001Z"
-                    stroke="white"
-                    stroke-width="1.5"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M13.9955 13.25H14.0045"
-                    stroke="white"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M10.4955 13.25H10.5045"
-                    stroke="white"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M6.9955 13.25H7.0045"
-                    stroke="white"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </span>
-              <a class="nav-link" href="/messages.html">Messages</a>
-            </li>
-            <li class="nav-item">
-              <span
-                ><svg
-                  width="25"
-                  height="24"
-                  viewBox="0 0 25 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M12.5 15C14.1569 15 15.5 13.6569 15.5 12C15.5 10.3431 14.1569 9 12.5 9C10.8431 9 9.5 10.3431 9.5 12C9.5 13.6569 10.8431 15 12.5 15Z"
-                    stroke="white"
-                    stroke-width="1.5"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M2.5 12.88V11.12C2.5 10.08 3.35 9.22 4.4 9.22C6.21 9.22 6.95 7.94 6.04 6.37C5.52 5.47 5.83 4.3 6.74 3.78L8.47 2.79C9.26 2.32 10.28 2.6 10.75 3.39L10.86 3.58C11.76 5.15 13.24 5.15 14.15 3.58L14.26 3.39C14.73 2.6 15.75 2.32 16.54 2.79L18.27 3.78C19.18 4.3 19.49 5.47 18.97 6.37C18.06 7.94 18.8 9.22 20.61 9.22C21.65 9.22 22.51 10.07 22.51 11.12V12.88C22.51 13.92 21.66 14.78 20.61 14.78C18.8 14.78 18.06 16.06 18.97 17.63C19.49 18.54 19.18 19.7 18.27 20.22L16.54 21.21C15.75 21.68 14.73 21.4 14.26 20.61L14.15 20.42C13.25 18.85 11.77 18.85 10.86 20.42L10.75 20.61C10.28 21.4 9.26 21.68 8.47 21.21L6.74 20.22C5.83 19.7 5.52 18.53 6.04 17.63C6.95 16.06 6.21 14.78 4.4 14.78C3.35 14.78 2.5 13.92 2.5 12.88Z"
-                    stroke="white"
-                    stroke-width="1.5"
-                    stroke-miterlimit="10"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </span>
-              <a class="nav-link" href="/setting.html">Setting</a>
-            </li>
-          </ul>
-        </div>
-      </aside>
-
-      <!-- Main Content Area -->
-      <div class="container">
-        <nav class="navbar">
-          <div class="welcome_msg">
-            Welcome, Anan Essam
-            <span class="ps-2"
-              ><img
-                src="./assets/imgs/home/hello_icon.svg"
-                alt="hello_icon.svg"
-            /></span>
-          </div>
-          <div class="search_input_container">
-            <img
-              class="search_icon_responsive"
-              src="./assets/imgs/home/search.svg"
-              alt="search.svg"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvas_search"
-            />
-
-            <!-- search offcanvas -->
-            <div
-              class="offcanvas search_offcanvas offcanvas-top"
-              data-bs-scroll="true"
-              data-bs-backdrop="true"
-              tabindex="-1"
-              id="offcanvas_search"
-              aria-labelledby="offcanvasScrollingLabel"
-            >
-              <form action="" class="search_form">
-                <input
-                  type="search"
-                  class="form-control search_input_offcanvas"
-                  placeholder="Search"
+    <main>
+      <section class="auth_sec sign_in_page">
+        <div class="row gx-0 gy-5">
+          <div class="col-md-6">
+            <div class="left_sec_container">
+              <div class="gif_container">
+                <img
+                  class="w-100"
+                  src="./assets/imgs/login/login_gif.gif"
+                  alt="login_gif.gif"
                 />
-              </form>
-            </div>
-            <!-- search offcanvas -->
-
-            <form action="" class="search_form">
-              <input
-                type="search"
-                class="form-control search_input"
-                placeholder="Search"
-              />
-            </form>
-          </div>
-          <div class="profile_notification_container">
-            <div class="notification_container">
-              <button
-                class="btn"
-                type="button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasNotification"
-              >
-                <span>
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12 6.44V9.77"
-                      stroke="#292D32"
-                      stroke-width="1.5"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                    />
-                    <path
-                      d="M12.02 2C8.34002 2 5.36002 4.98 5.36002 8.66V10.76C5.36002 11.44 5.08002 12.46 4.73002 13.04L3.46002 15.16C2.68002 16.47 3.22002 17.93 4.66002 18.41C9.44002 20 14.61 20 19.39 18.41C20.74 17.96 21.32 16.38 20.59 15.16L19.32 13.04C18.97 12.46 18.69 11.43 18.69 10.76V8.66C18.68 5 15.68 2 12.02 2Z"
-                      stroke="#292D32"
-                      stroke-width="1.5"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                    />
-                    <path
-                      d="M15.33 18.82C15.33 20.65 13.83 22.15 12 22.15C11.09 22.15 10.25 21.77 9.64998 21.17C9.04998 20.57 8.66998 19.73 8.66998 18.82"
-                      stroke="#292D32"
-                      stroke-width="1.5"
-                      stroke-miterlimit="10"
-                    />
-                    <path
-                      d="M18 11C19.6569 11 21 9.65685 21 8C21 6.34315 19.6569 5 18 5C16.3431 5 15 6.34315 15 8C15 9.65685 16.3431 11 18 11Z"
-                      fill="#ED2121"
-                      class="show"
-                      stroke="#ED2121"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </span>
-              </button>
-
-              <!-- notification offcanvas -->
-              <div
-                class="offcanvas offcanvas-top"
-                data-bs-scroll="true"
-                data-bs-backdrop="false"
-                tabindex="-1"
-                id="offcanvasNotification"
-                aria-labelledby="offcanvasScrollingLabel"
-              >
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
-                    Notifications.
-                  </h5>
-                  <button type="button" class="btn btn_read">
-                    Mark All As Read
-                  </button>
-                </div>
-                <div class="offcanvas-body">
-                  <div class="day">Today</div>
-                  <div class="notification_item">
-                    <a href="">
-                      <p class="title">Lorem ipsum dolor sit amet.</p>
-                      <p class="subtitle">
-                        Lorem ipsum dolor sit amet consectetur. Tortor id dolor
-                        posuere diam nec lorem. Tincidunt tincidunt pellentesque
-                        vel a mattis. .
-                      </p>
-                    </a>
-                  </div>
-
-                  <div class="notification_item">
-                    <a href="">
-                      <p class="title">Lorem ipsum dolor sit amet.</p>
-                      <p class="subtitle">
-                        Lorem ipsum dolor sit amet consectetur. Tortor id dolor
-                        posuere diam nec lorem. Tincidunt tincidunt pellentesque
-                        vel a mattis. .
-                      </p>
-                    </a>
-                  </div>
-                  <div class="notification_item">
-                    <a href="">
-                      <p class="title">Lorem ipsum dolor sit amet.</p>
-                      <p class="subtitle">
-                        Lorem ipsum dolor sit amet consectetur. Tortor id dolor
-                        posuere diam nec lorem. Tincidunt tincidunt pellentesque
-                        vel a mattis. .
-                      </p>
-                    </a>
-                  </div>
-                  <div class="notification_item">
-                    <a href="">
-                      <p class="title">Lorem ipsum dolor sit amet.</p>
-                      <p class="subtitle">
-                        Lorem ipsum dolor sit amet consectetur. Tortor id dolor
-                        posuere diam nec lorem. Tincidunt tincidunt pellentesque
-                        vel a mattis. .
-                      </p>
-                    </a>
-                  </div>
-                  <div class="notification_item">
-                    <a href="">
-                      <p class="title">Lorem ipsum dolor sit amet.</p>
-                      <p class="subtitle">
-                        Lorem ipsum dolor sit amet consectetur. Tortor id dolor
-                        posuere diam nec lorem. Tincidunt tincidunt pellentesque
-                        vel a mattis. .
-                      </p>
-                    </a>
-                  </div>
-                  <div class="notification_item">
-                    <a href="">
-                      <p class="title">Lorem ipsum dolor sit amet.</p>
-                      <p class="subtitle">
-                        Lorem ipsum dolor sit amet consectetur. Tortor id dolor
-                        posuere diam nec lorem. Tincidunt tincidunt pellentesque
-                        vel a mattis. .
-                      </p>
-                    </a>
-                  </div>
-
-                </div>
-                <div class="offcanvas-footer">
-                  <a class="btn btn_view_all_not">View All Notification.</a>
-                </div>
               </div>
-              <!-- notification offcanvas -->
-            </div>
-
-            <div class="dropdown profile_data_container">
-              <button
-                class="btn dropdown-toggle flex_content"
-                type="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <span>
-                  <img
-                    src="./assets/imgs/home/profile_img.png"
-                    alt="profile_img.png"
-                  />
-                </span>
-                <div class="hide_when_1000">
-                  <p class="user_name">Annan Essam</p>
-                  <p class="user_text">gghfddytrytf</p>
-                </div>
-              </button>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
+              <h1 class="title">Great service for customer managment</h1>
+              <p class="subtitle">Great service for customer managment</p>
             </div>
           </div>
-          <button
-            class="btn btn_toggler"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasScrolling"
-            aria-controls="offcanvasScrolling"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </nav>
-        <!-- Aside responsive -->
-
-        <aside
-          class="aside d-block aside_mob offcanvas offcanvas-start"
-          data-bs-scroll="true"
-          data-bs-backdrop="false"
-          tabindex="-1"
-          id="offcanvasScrolling"
-        >
-          <div class="asid_container">
-            <a href="" class="aside_logo_container">
-              <img
-                class="aside_logo"
-                src="./assets/imgs/home/home_logo.svg"
-                alt="home_logo.svg"
-              />
-            </a>
-            <ul class="nav flex-column">
-              <li class="nav-item active">
-                <span
-                  ><svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M13 16.5H11C10.17 16.5 9.5 17.17 9.5 18V21.5H14.5V18C14.5 17.17 13.83 16.5 13 16.5Z"
-                      stroke="white"
-                      stroke-width="1.2"
-                      stroke-miterlimit="10"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M10.07 2.81997L3.14002 8.36997C2.36002 8.98997 1.86002 10.3 2.03002 11.28L3.36002 19.24C3.60002 20.66 4.96002 21.81 6.40002 21.81H17.6C19.03 21.81 20.4 20.65 20.64 19.24L21.97 11.28C22.13 10.3 21.63 8.98997 20.86 8.36997L13.93 2.82997C12.86 1.96997 11.13 1.96997 10.07 2.81997Z"
-                      stroke="white"
-                      stroke-width="1.2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </span>
-                <a class="nav-link active" aria-current="page" href="/"
-                  >Homepage</a
-                >
-              </li>
-              <li class="nav-item">
-                <span>
-                  <svg
-                    width="25"
-                    height="24"
-                    viewBox="0 0 25 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M18.48 10.79V14.79C18.48 15.05 18.47 15.3 18.44 15.54C18.21 18.24 16.62 19.58 13.69 19.58H13.29C13.04 19.58 12.8 19.7 12.65 19.9L11.45 21.5C10.92 22.21 10.06 22.21 9.53 21.5L8.32999 19.9C8.19999 19.73 7.91 19.58 7.69 19.58H7.29001C4.10001 19.58 2.5 18.79 2.5 14.79V10.79C2.5 7.86001 3.85001 6.27001 6.54001 6.04001C6.78001 6.01001 7.03001 6 7.29001 6H13.69C16.88 6 18.48 7.60001 18.48 10.79Z"
-                      stroke="white"
-                      stroke-width="1.5"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M22.48 6.79001V10.79C22.48 13.73 21.13 15.31 18.44 15.54C18.47 15.3 18.48 15.05 18.48 14.79V10.79C18.48 7.60001 16.88 6 13.69 6H7.29004C7.03004 6 6.78004 6.01001 6.54004 6.04001C6.77004 3.35001 8.36004 2 11.29 2H17.69C20.88 2 22.48 3.60001 22.48 6.79001Z"
-                      stroke="white"
-                      stroke-width="1.5"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M13.9955 13.25H14.0045"
-                      stroke="white"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M10.4955 13.25H10.5045"
-                      stroke="white"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M6.9955 13.25H7.0045"
-                      stroke="white"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </span>
-                <a class="nav-link" href="messages.html">Messages</a>
-              </li>
-              <li class="nav-item">
-                <span
-                  ><svg
-                    width="25"
-                    height="24"
-                    viewBox="0 0 25 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12.5 15C14.1569 15 15.5 13.6569 15.5 12C15.5 10.3431 14.1569 9 12.5 9C10.8431 9 9.5 10.3431 9.5 12C9.5 13.6569 10.8431 15 12.5 15Z"
-                      stroke="white"
-                      stroke-width="1.5"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M2.5 12.88V11.12C2.5 10.08 3.35 9.22 4.4 9.22C6.21 9.22 6.95 7.94 6.04 6.37C5.52 5.47 5.83 4.3 6.74 3.78L8.47 2.79C9.26 2.32 10.28 2.6 10.75 3.39L10.86 3.58C11.76 5.15 13.24 5.15 14.15 3.58L14.26 3.39C14.73 2.6 15.75 2.32 16.54 2.79L18.27 3.78C19.18 4.3 19.49 5.47 18.97 6.37C18.06 7.94 18.8 9.22 20.61 9.22C21.65 9.22 22.51 10.07 22.51 11.12V12.88C22.51 13.92 21.66 14.78 20.61 14.78C18.8 14.78 18.06 16.06 18.97 17.63C19.49 18.54 19.18 19.7 18.27 20.22L16.54 21.21C15.75 21.68 14.73 21.4 14.26 20.61L14.15 20.42C13.25 18.85 11.77 18.85 10.86 20.42L10.75 20.61C10.28 21.4 9.26 21.68 8.47 21.21L6.74 20.22C5.83 19.7 5.52 18.53 6.04 17.63C6.95 16.06 6.21 14.78 4.4 14.78C3.35 14.78 2.5 13.92 2.5 12.88Z"
-                      stroke="white"
-                      stroke-width="1.5"
-                      stroke-miterlimit="10"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </span>
-                <a class="nav-link" href="setting.html">Setting</a>
-              </li>
-            </ul>
-          </div>
-        </aside>
-        <!-- cards container -->
-        <div class="cards_container">
-          <div class="row px-3">
-            <div class="col">
-              <div class="card">
-                <div class="icon_text_container">
-                  <img
-                    src="./assets/imgs/home/blue_text_icon.svg"
-                    alt="blue_text_icon.svg"
-                  />
-                  <div class="card_data_container">
-                    <p class="card_data">Total Massage</p>
-                    <div class="card_value">1000</div>
-                  </div>
-                </div>
-                <div class="percent_days_container">
-                  <img
-                    src="./assets/imgs/home/green_up_arrow.svg"
-                    alt="green_up_arrow.svg"
-                  />
-                  <span>0% (30 days)</span>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <div class="icon_text_container">
-                  <img
-                    src="./assets/imgs/home/green_text_icon.svg"
-                    alt="green_text_icon.svg"
-                  />
-                  <div class="card_data_container">
-                    <p class="card_data">Left Of 1000</p>
-                    <div class="card_value">700</div>
-                  </div>
-                </div>
-                <div class="percent_days_container">
-                  <img
-                    src="./assets/imgs/home/green_up_arrow.svg"
-                    alt="green_up_arrow.svg"
-                  />
-                  <span>70% (30 days)</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card">
-                <div class="icon_text_container">
-                  <img
-                    src="./assets/imgs/home/red_text_icon.svg"
-                    alt="red_text_icon.svg"
-                  />
-                  <div class="card_data_container">
-                    <p class="card_data">Total Usage</p>
-                    <div class="card_value">300</div>
-                  </div>
-                </div>
-                <div class="percent_days_container">
-                  <img
-                    src="./assets/imgs/home/red_down_arrow.svg"
-                    alt="red_down_arrow.svg"
-                  />
-                  <span>30% (30 days)</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card renew_card">
-                <div>
-                  <p class="renew_info">20 Days To Renew</p>
-                  <p class="renew_date">(26 Aug 2024)</p>
-                </div>
-                <div>
-                  <button class="btn btn_renew">
-                    <span>Renew</span>
+          <div class="col-md-6">
+            <div class="form_container">
+              <div class="w_1200_100">
+                <form action="">
+                  <div class="logo_cobtainer">
                     <img
-                      class="renew_icon"
-                      src="./assets/imgs/home/renew_icon.svg"
-                      alt="renew_icon.svg"
+                      src="./assets/imgs/login/beon_logo.svg.svg"
+                      alt="beon_logo.svg.svg"
                     />
-                  </button>
-                </div>
+                  </div>
+                  <p class="subtitle">Login to BeOn</p>
+                  <div class="login_card">
+                    <div class="input_group">
+                      <label class="label_class" for="email">Email</label>
+                      <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        class="form-control input_class"
+                        placeholder="example@companyname.com"
+                      />
+                    </div>
+
+                    <div class="mb_8">
+                      <label class="label_class" for="Password">Password</label>
+                      <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        class="form-control input_class"
+                        placeholder="Password"
+                      />
+                    </div>
+                    <div>
+                      <a class="forget_pass" href="forgot_password.html">Forgot your password?</a>
+                    </div>
+                    <div>
+                      <button type="button" onclick="window.location.href='/home.html'" class="btn btn_login">Login</button>
+                    </div>
+                    <p class="donot_have_acc">
+                      Don’t Have An Account?
+                      <a href="/sign_up.html" class="text_blue">Sign Up</a>
+                    </p>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-xl-7">
-            <div class="table_container">
-              <p class="table_caption">Last Massages</p>
-
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th class="text-start px-3" scope="col">Platform</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Time</th>
-                    <th scope="col">Status</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th class="px-3 text-start" scope="row">
-                      <img src="./assets/imgs/home/home_logo.svg" alt="" />
-                    </th>
-                    <td>Annan Essam</td>
-                    <td>05:00PM</td>
-                    <td>Sent</td>
-                  </tr>
-                  <tr>
-                    <th class="text-start px-3" scope="row">
-                      <img src="./assets/imgs/home/WhatsApp.svg" alt="" />
-                    </th>
-                    <td>Mohamed MonGe</td>
-                    <td>05:00PM</td>
-                    <td>Unsent</td>
-                  </tr>
-                  <tr>
-                    <th class="px-3 text-start" scope="row">
-                      <img src="./assets/imgs/home/home_logo.svg" alt="" />
-                    </th>
-                    <td>Annan Essam</td>
-                    <td>05:00PM</td>
-                    <td>Sent</td>
-                  </tr>
-                  <tr>
-                    <th class="text-start px-3" scope="row">
-                      <img src="./assets/imgs/home/WhatsApp.svg" alt="" />
-                    </th>
-                    <td>Mohamed MonGe</td>
-                    <td>05:00PM</td>
-                    <td>Unsent</td>
-                  </tr>
-                  <tr>
-                    <th class="text-start px-3" scope="row">
-                      <img src="./assets/imgs/home/WhatsApp.svg" alt="" />
-                    </th>
-                    <td>Mohamed MonGe</td>
-                    <td>05:00PM</td>
-                    <td>Unsent</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div class="col-xl-5">
-            <div class="graph_container">
-              <div class="text-center">
-                <img src="./assets/imgs/home/graph.png" alt="graph.png" />
-              </div>
-              <div class="d-flex gap_45 flex_wrap_1200">
-                <div class="graph_data_container">
-                  <div>
-                    1000
-                    <br />
-                    Massage
-                  </div>
-
-                  <div>
-                    700
-                    <br />
-
-                    Left
-                  </div>
-                  <div>
-                    300
-                    <br />
-                    Usage
-                  </div>
-                </div>
-                <div>
-                  <button class="btn btn_renew">
-                    <span>Renew</span>
-                    <img
-                      class="renew_icon"
-                      src="./assets/imgs/home/renew_icon.svg"
-                      alt="renew_icon.svg"
-                    />
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
+      </section>
+    </main>
     <!-- Global Bootstrap CDN V5.3.2  -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"
       integrity="sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A=="
       crossorigin="anonymous"
     ></script>
-    <script src="./content/js/home.js"></script>
   </body>
 </html>
